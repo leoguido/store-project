@@ -1,0 +1,1 @@
+I'm learning web development and this is my first repository. I don't have too much to say ya know.
