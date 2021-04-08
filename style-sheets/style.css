@@ -1,0 +1,32 @@
+/* Var */
+:root {
+    --LogoFont : 'Roboto Mono', monospace;
+    --MainFont : 'Roboto', sans-serif;
+    --MainColor : #EC4ACC;
+    --Light : #FFFFFF;
+    --Dark : #000000;
+
+}
+
+/* global */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+
+/* header */
+.header{
+    display: grid;
+    grid: 6rem / 90% 5% 5% ;
+    gap: 0;
+    padding: 4rem 0;
+}
+.header__logo{
+    font-family: var(--LogoFont) ;
+    margin: 0;
+}
+.header__icon:hover{
+ background-color: var(--MainColor);
+}
