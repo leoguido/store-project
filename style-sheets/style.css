@@ -49,6 +49,7 @@ body{
     display: flex;
     gap: 4rem;
     justify-content: center;
+    margin-bottom: 2.5rem;
 }
 .navegation__link{
     text-decoration: none;
@@ -130,39 +131,7 @@ body{
 /* Section*/
 .section{
     display: flex;
-}
-.section__grid{
-    width: min(125rem , 100%);
-    margin: 0 5rem 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.section__product{
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    margin: 1rem;
-}
-.section__product:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    border-bottom: 0.5rem solid;
-    border-color:var(--MainColor);
-}
-.section__image{
-    width: 37rem;
-    margin: 1.5rem auto;
-}
-.section__name{
-    font-family: var(--MainFont);
-    text-align: center;
-    margin: 0;
-}
-.section__price{
-    font-family: var(--MainFont);
-    text-align: center;
-    margin-top: 1rem;
+    margin-bottom: 2.5rem;
 }
 .heading__text{
     font-family: var(--MainFont);
@@ -180,4 +149,77 @@ body{
     font-family: var(--MainFont);
     font-size: 6rem;
     margin-top: 0;
+}
+.section__grid{
+    width: min(125rem , 100%);
+    margin: 0 5rem 0 auto;
+    padding: 0 0 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-left: 0.1rem solid;
+    border-color:var(--Dark);
+}
+.section__product{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin: 1rem;
+}
+.section__product:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border-bottom: 0.1rem solid;
+    border-color:var(--MainColor);
+}
+.section__image{
+    width: 37rem;
+    margin: 1.5rem auto;
+}
+.section__name{
+    font-family: var(--MainFont);
+    text-align: center;
+    margin: 0;
+}
+.section__price{
+    font-family: var(--MainFont);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* About us page*/
+.AboutUs__titletext{
+    font-family: var(--LogoFont);
+    font-size: 5rem;
+    text-align: center;
+}
+.AboutUsParagraphs{
+    width: min(125rem , 100%);
+    margin: 0 auto;
+}
+.AboutUs__p1 ,
+.AboutUs__p2{
+    font-family: var(--MainFont);
+    font-size: 2.5rem;
+    text-align: justify;
+}
+.AboutUs__img{
+    margin: 6rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AboutUs__link{
+    text-decoration: none;
+}
+.AboutUs__logo{
+    color: var(--Dark);
+    font-family: var(--LogoFont);
+    justify-content: center;
+    font-size: 6rem;
+    display: flex;
+    margin: 10rem auto;
+}
+.AboutUs__registered{
+    font-size: 2rem;
 }
