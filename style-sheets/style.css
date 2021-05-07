@@ -42,6 +42,17 @@ body{
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
+@media (max-width: 1025px){
+    .header{
+        grid: 6rem / 100% 0% 0% ;
+    }
+    .header__icon{
+        display: none;
+    }
+    .header__logo{
+        justify-content: center;
+    }
+}
 
 /* navegation */
 .navegation{
@@ -186,6 +197,21 @@ body{
     text-align: center;
     margin-top: 1rem;
 }
+@media (max-width: 1425px){
+    .section__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 1025px){
+    .section{
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px){
+    .section__grid{
+        grid-template-columns: 1fr;
+    }
+}
 
 /* About us page*/
 .AboutUs__titletext{
@@ -222,4 +248,9 @@ body{
 }
 .AboutUs__registered{
     font-size: 2rem;
+}
+@media(max-width: 512px){
+    .AboutUs__img{
+        width: 100%;
+    }
 }
